@@ -1,13 +1,93 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.countdown {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./media/christmas-tree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+}
+.greetings {
+  background: linear-gradient(126deg, #c9040b 30%, #fc1934 70%);
+  color: white;
+  padding: 60px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.greetings__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+.greetings__form__title {
+  text-align: center;
+}
+.greetings__form__input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 4px;
+  outline: none;
+  border: none;
+}
+.greetings__form__submit {
+  width: 80px;
+  background-color: #28560b;
+  color: white;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+}
+.greetings__list__title {
+  text-align: center;
+}
+.greetings__list {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.greetings__list__output__text {
+  border: 2px white solid;
+  border-radius: 10px;
+  padding: 4px;
+}
+.footer {
+  background-color: #28560b;
+  padding: 10px 0;
+}
+.footer__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer__list__item__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer__list__item {
+  color: white;
 }
