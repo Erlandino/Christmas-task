@@ -10,6 +10,7 @@ export default function Footer() {
             className="footer__list__item__link"
             href="https://github.com/Erlandino/Christmas-task"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="footer__list__item__link__logo" src={Github} alt="" /> Github
           </a>
@@ -20,6 +21,7 @@ export default function Footer() {
             className="footer__list__item__link"
             href="https://www.figma.com/file/cPIkeXKbLLojYG7EyJXObd/ChristmasCalender?node-id=2%3A33&t=voO52qHem3ftnr1A-1"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="footer__list__item__link__logo" src={Figma} alt="" /> Figma
           </a>

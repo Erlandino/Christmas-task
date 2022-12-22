@@ -31,6 +31,7 @@ export default function Greetings() {
       return {
         name: event.target.id === "name" ? event.target.value : prevItem.name,
         message: event.target.id === "message" ? event.target.value : prevItem.message,
+        dateSent: `${new Date().getDate()}-${new Date().getMonth()}-${new Date().getFullYear()}`,
       };
     });
   }
@@ -46,6 +47,7 @@ export default function Greetings() {
 
   function postGreeting() {
     const post = localStorage.getItem("Greeting");
+
     console.log(post);
     if (post) {
       setOtherGreetings((prevState) => {
@@ -88,6 +90,7 @@ export default function Greetings() {
             <div key={index} className="greetings__list__output">
               <h3 className="greetings__list__output__title">{element.name}</h3>
               <p className="greetings__list__output__text">{element.message}</p>
+              <p className="greetings__list__output__date">{element.dateSent}</p>
             </div>
           );
         })}
