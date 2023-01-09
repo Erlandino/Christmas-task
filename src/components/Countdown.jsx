@@ -42,15 +42,15 @@ export default function Countdown() {
 
   return (
     <div className="countdown">
-      <h1 className="countdown-title">JULE NEDTELLING</h1>
-      <p>Dager</p>
-      <p>{timeLeft.days}</p>
-
-      <p>Timer</p>
-      <p>{timeLeft.hours}</p>
-
-      <p>Sekunder</p>
-      <p>{timeLeft.seconds}</p>
+      <h1 className="countdown__title">JULE NEDTELLING</h1>
+      <div className="countdown__timeLeft">
+        <p className="countdown__timeLeft__paragraph">Dager</p>
+        <p className="countdown__timeLeft__paragraph">{timeLeft.days}</p>
+        <p className="countdown__timeLeft__paragraph">Timer</p>
+        <p className="countdown__timeLeft__paragraph">{timeLeft.hours}</p>
+        <p className="countdown__timeLeft__paragraph">Sekunder</p>
+        <p className="countdown__timeLeft__paragraph">{timeLeft.seconds}</p>
+      </div>
     </div>
   );
 }
