@@ -5,8 +5,10 @@
 }
 body {
   height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Countdown section */
 .countdown {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -20,6 +22,28 @@ body {
   color: white;
   gap: 30px;
 }
+.countdown__title {
+  font-size: 8vw;
+  font-size: calc(24px + 3.5vw);
+}
+.countdown__timeLeft__paragraph {
+  font-size: 8vw;
+  font-size: calc(20px + 1.5vw);
+}
+.countdown__timeLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .countdown {
+    display: flex;
+  }
+}
+/* Countdown section end */
+
+/*  Greetings section */
 .greetings {
   background: linear-gradient(126deg, #c9040b 30%, #fc1934 70%);
   color: white;
@@ -70,6 +94,9 @@ body {
   border-radius: 10px;
   padding: 4px;
 }
+/* Greetings section end */
+
+/* Footer */
 .footer {
   background-color: #28560b;
   padding: 10px 0;
@@ -91,3 +118,4 @@ body {
 .footer__list__item {
   color: white;
 }
+/* Footer */
