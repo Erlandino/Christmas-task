@@ -1,9 +1,13 @@
+// Imports
 import Github from "../media/github.png";
 import Figma from "../media/figma.png";
 
+// Footer component
 export default function Footer() {
   return (
-    <div className="footer">
+    // Footer container
+    <footer className="footer">
+      {/* list */}
       <ul className="footer__list">
         <li className="footer__list__item">
           <a
@@ -27,6 +31,6 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }
