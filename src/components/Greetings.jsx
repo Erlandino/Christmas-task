@@ -38,7 +38,9 @@ export default function Greetings() {
       return {
         name: event.target.id === "name" ? event.target.value : prevItem.name,
         message: event.target.id === "message" ? event.target.value : prevItem.message,
-        dateSent: `${new Date().getDate()}-${new Date().getMonth()}-${new Date().getFullYear()}`,
+        dateSent: `${new Date().getDate()}-${
+          new Date().getMonth() + 1
+        }-${new Date().getFullYear()}`,
       };
     });
   }

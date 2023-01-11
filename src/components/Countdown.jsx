@@ -61,19 +61,38 @@ export default function Countdown() {
       {/* Title */}
       <h1 className="countdown__title">JULE NEDTELLING</h1>
       {/* Time left container */}
-      <div className="countdown__timeLeft">
-        {/* Days */}
-        <p className="countdown__timeLeft__paragraph">Dager</p>
-        <p className="countdown__timeLeft__paragraph">{timeLeft.days}</p>
+      <table className="countdown__timeLeft">
+        {/* Time title */}
+        <thead>
+          <tr className="countdown__timeLeft__titles">
+            <th className="countdown__timeLeft__titles__title">Dager</th>
+            <th className="countdown__timeLeft__titles__title">Timer</th>
+            <th className="countdown__timeLeft__titles__title">Sekunder</th>
+          </tr>
+        </thead>
 
-        {/* Hours */}
-        <p className="countdown__timeLeft__paragraph">Timer</p>
-        <p className="countdown__timeLeft__paragraph">{timeLeft.hours}</p>
-
-        {/* Seconds */}
-        <p className="countdown__timeLeft__paragraph">Sekunder</p>
-        <p className="countdown__timeLeft__paragraph">{timeLeft.seconds}</p>
-      </div>
+        {/* Time amount */}
+        <tbody>
+          <tr className="countdown__timeLeft__details">
+            <td className="countdown__timeLeft__details__detail">{timeLeft.days}</td>
+            <td className="countdown__timeLeft__details__detail">{timeLeft.hours}</td>
+            <td className="countdown__timeLeft__details__detail">{timeLeft.seconds}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
+
+/*
+<div className="countdown__timeLeft">
+<p className="countdown__timeLeft__paragraph">Dager</p>
+<p className="countdown__timeLeft__paragraph">{timeLeft.days}</p>
+
+<p className="countdown__timeLeft__paragraph">Timer</p>
+<p className="countdown__timeLeft__paragraph">{timeLeft.hours}</p>
+
+<p className="countdown__timeLeft__paragraph">Sekunder</p>
+<p className="countdown__timeLeft__paragraph">{timeLeft.seconds}</p>
+</div>
+*/
