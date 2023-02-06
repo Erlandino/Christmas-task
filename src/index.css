@@ -40,6 +40,9 @@ body {
   width: 30%;
   background: #fc1934;
 }
+.countdown__timeLeft__titles__title {
+  border-bottom: #fc1934 2px solid;
+}
 .countdown__timeLeft__titles__title:nth-child(even),
 .countdown__timeLeft__details__detail:nth-child(even) {
   border-right: solid;
