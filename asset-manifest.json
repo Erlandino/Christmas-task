@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Christmas-task/static/css/main.e9a1fa85.css",
+    "main.css": "/Christmas-task/static/css/main.c5697e34.css",
     "main.js": "/Christmas-task/static/js/main.8f3a63c7.js",
     "static/media/christmas-tree.jpg": "/Christmas-task/static/media/christmas-tree.dd548255d9936d65abe8.jpg",
     "index.html": "/Christmas-task/index.html",
-    "main.e9a1fa85.css.map": "/Christmas-task/static/css/main.e9a1fa85.css.map",
+    "main.c5697e34.css.map": "/Christmas-task/static/css/main.c5697e34.css.map",
     "main.8f3a63c7.js.map": "/Christmas-task/static/js/main.8f3a63c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9a1fa85.css",
+    "static/css/main.c5697e34.css",
     "static/js/main.8f3a63c7.js"
   ]
 }
